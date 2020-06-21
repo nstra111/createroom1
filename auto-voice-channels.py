@@ -141,7 +141,7 @@ def cleanup(client, tick_):
             cfg.FIRST_RUN_COMPLETE = True
             guilds = func.get_guilds(client)
             if guilds:
-                text = 'vc/help'
+                text = 'ec/help'
                 if len(guilds) == 1 and guilds[0].id in cfg.PREFIXES:
                     text = cfg.PREFIXES[guilds[0].id] + 'help'
             else:
